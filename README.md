@@ -15,7 +15,7 @@ This is the solution to the AirBnB clone - The console project for ALX high leve
   - [Description of the command interpreter](#description-of-the-command-interpreter)
     - [How to start it](#how-to-start-it)
     - [How to use it](#how-to-use-it)
-    - [Examples] (#examples)
+    - [Examples](#examples)
   - [Execution](#execution)
   - [Our process](#our-process)
   - [Built with](#built-with)
@@ -121,6 +121,7 @@ peter@eben:~/AirBnB$ ./console.py
 ```
 
 #### Examples
+* Starting the shell mode
 
 ```
 peter@eben:~/AirBnB$ ./console.py
@@ -133,25 +134,34 @@ peter@eben:~/AirBnB$ ./console.py
 
 (hbnb) show BaseModel My_First_Model
 ** no instance found **
+```
 
 * Creating a new instance of the `BaseModel`
+```
 (hbnb) create BaseModel 49faff9a-6318-451f-87b6-910505c55907
+```
 
 * Displaying the attributes of all the available `BaseModels`
+```
 (hbnb) all BaseModel
 ["[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'id': '49faff9a-6318-451f-87b6-910505c55907', 'updated_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903300)}"]
+```
 
 * Display a specific `BaseModel` by adding an option of `id`
+```
 (hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
 [BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'id': '49faff9a-6318-451f-87b6-910505c55907', 'updated_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903300)}
-
-
-(hbnb) destroy
-** class name missing **
+```
 
 * Destroying a specific `BaseModel` by passing `id` as option
+```
+(hbnb) destroy
+** class name missing **
 (hbnb) destroy BaseModel 49faff9a-6318-451f-87b6-910505c55907
+```
 
+* Attempting to show the `BaseModel` that has being destroyed
+```
 (hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
 ** no instance found **
 (hbnb)
