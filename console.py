@@ -16,6 +16,7 @@ from models.state import State
 import json
 import shlex
 
+
 class HBNBCommand(cmd.Cmd):
     """The command shell processor"""
 

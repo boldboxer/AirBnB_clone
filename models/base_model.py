@@ -7,7 +7,6 @@ from datetime import datetime
 from models import storage
 
 
-
 class BaseModel:
     """ Defines all th common methods/attributes
     """
