@@ -36,8 +36,15 @@ class FileStorage:
         If the file doesn’t exist, no exception should be raised)
         """
         from models.base_model import BaseModel
+        from models.user import User
+        from models.amenity import Amenity
+        from models.city import City
+        from models.place import Place
+        from models.review import Review
+        from models.state import State
 
-        dctn = {'BaseModel': BaseModel}
+        dctn = {'BaseModel': BaseModel, 'User': User, 'Amenity': Amenity,
+                'City': City, 'Place': Place, 'Review': Review, 'State': State}
 
         if os.path.exists(FileStorage.__file_path) is True:
             with open(FileStorage.__file_path, 'r') as f:
