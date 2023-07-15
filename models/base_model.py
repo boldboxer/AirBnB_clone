@@ -2,9 +2,10 @@
 """
 Parent class that other classes will inherit
 """
+import uuid
 from datetime import datetime
 from models import storage
-import uuid
+
 
 
 class BaseModel:
