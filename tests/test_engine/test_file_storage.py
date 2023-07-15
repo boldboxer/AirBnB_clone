@@ -13,6 +13,7 @@ import re
 import json
 import os
 
+
 class TestFileStorage(unittest.TestCase):
     """
     Test Cases for the FileStorage class.
@@ -62,7 +63,6 @@ class TestFileStorage(unittest.TestCase):
         self.assertTrue(key in storage.all())
         self.assertEqual(storage.all()[key], o)
 
-
     def help_test_all_multiple(self, classname):
         """Helper tests all() method with many objects for classname."""
         self.resetStorage()
@@ -76,7 +76,6 @@ class TestFileStorage(unittest.TestCase):
             key = "{}.{}".format(type(o).__name__, o.id)
             self.assertTrue(key in storage.all())
             self.assertEqual(storage.all()[key], o)
-
 
     def test_5_all_no_args(self):
         """Tests all() with no arguments."""
@@ -104,7 +103,6 @@ class TestFileStorage(unittest.TestCase):
         self.assertTrue(key in FileStorage._FileStorage__objects)
         self.assertEqual(FileStorage._FileStorage__objects[key], o)
 
-
     def test_5_new_no_args(self):
         """Tests new() with no arguments."""
         self.resetStorage()
@@ -122,7 +120,6 @@ class TestFileStorage(unittest.TestCase):
         msg = "new() takes 2 positional arguments but 3 were given"
         self.assertEqual(str(e.exception), msg)
 
-
     def help_test_save(self, classname):
         """Helps tests save() method for classname."""
         self.resetStorage()
@@ -138,7 +135,6 @@ class TestFileStorage(unittest.TestCase):
             self.assertEqual(len(f.read()), len(json.dumps(d)))
             f.seek(0)
             self.assertEqual(json.load(f), d)
-
 
     def test_5_save_no_args(self):
         """Tests save() with no arguments."""
@@ -169,7 +165,6 @@ class TestFileStorage(unittest.TestCase):
         storage.reload()
         self.assertEqual(o.to_dict(), storage.all()[key].to_dict())
 
-
     def help_test_reload_mismatch(self, classname):
         """Helps test reload() method for classname."""
         self.resetStorage()
@@ -184,7 +179,6 @@ class TestFileStorage(unittest.TestCase):
         o.name = "Laura"
         storage.reload()
         self.assertNotEqual(o.to_dict(), storage.all()[key].to_dict())
-
 
     def test_5_reload_no_args(self):
         """Tests reload() with no arguments."""
