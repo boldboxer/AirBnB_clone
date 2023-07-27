@@ -1,6 +1,6 @@
 # 0x01. AirBnB clone - Web static
 
-** Concepts **
+**Concepts**
 - For this project, we expect you to look at these concepts:
 	- [HTML/CSS](https://intranet.alxswe.com/concepts/2)
 	- [The trinity of front-end quality](https://intranet.alxswe.com/concepts/4)
@@ -13,7 +13,7 @@ Before developing a big and complex web application, we will build the front end
 
 The first step is to “design” / “sketch” / “prototype” each element:
 
-** Create simple HTML static pages **
+**Create simple HTML static pages**
 # Style guide #
 - Fake contents
 - No Javascript
@@ -71,4 +71,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - You are not allowed to use Javascript
 - Current screenshots have been done on Chrome 56 or more.
 - No cross browsers
+
 ***You have to follow all requirements but some margin/padding are missing - you should try to fit as much as you can to screenshots***
